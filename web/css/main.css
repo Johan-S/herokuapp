@@ -1,0 +1,139 @@
+
+section {
+  margin-top: 2em;
+  position: relative;
+}
+
+nav {
+  background-color: aqua;
+  text-align: right;
+  padding: 0.5em;
+}
+a {
+  cursor: pointer;
+}
+graph {
+  display: inline-block;
+  font-size: 1em;
+  line-height: 26;
+  height: 20em;
+  border: 0.1em solid black;
+}
+graph canvas {
+  height: 19.8em;
+  vertical-align: top;
+}
+main {
+  padding-bottom: 8em;
+}
+footer {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  height: 6em;
+  padding-top: 0.5em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+}
+
+hr {
+  border-top: 1px solid #ccc;
+}
+sourcecode {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  background-color: #ccc;
+  height: 100%;
+}
+sourcecode > * {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 0;
+  padding: 0;
+}
+sourcecode * {
+  white-space: pre;
+  background-color: #ccc;
+}
+sourcecode div {
+  padding-left: 0.4em;
+}
+
+sourcecode div:nth-child(2n) {
+  background-color: #f0f0f0;
+}
+sourcecode div:nth-child(2n+1) {
+  background-color: #e8e8e8;
+}
+
+.standardpage {
+  width: 800px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.unselectable {
+  -webkit-user-select: none;      
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  cursor: default;
+}
+
+.linenumber {
+  -webkit-user-select: none;      
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  cursor: default;
+  border-right: solid 1px #aaa;
+  color: #aaa;
+  height: 100%;
+}
+.lineshade div:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+.lineshade div:nth-child(2n+1) {
+  background-color: #eaeaea;
+}
+.clickable {
+  cursor: pointer;
+}
+#view {
+  text-align: center;
+}
+
+.file-list {
+  display: inline-block;
+  width: 20em;
+  vertical-align: top;
+  padding-left: 1em;
+  text-align: left;
+  list-style: none;
+  cursor: pointer;
+}
+.inline {
+  display: inline-block;
+}
+
+
+.login-form {
+  text-align: left;
+  display: inline-block;
+  margin: 0.1em;
+}
+.login-form input {
+  margin-bottom: 0.2em;
+}

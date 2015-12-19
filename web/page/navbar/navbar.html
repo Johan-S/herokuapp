@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<nav ng-controller="navbar">
+  <span ng-show="account.isLogged()">
+    {{account.getName()}} <a href="" ng-click="account.logout()">
+      Logout
+    </a>
+  </span>
+  <span ng-show="!account.isLogged()">
+    <a href="#/login">
+      Login
+    </a>
+    <a href="#/register">
+      Register
+    </a>
+  </span>
+  <a href="#/">
+    Home
+  </a>
+</nav>

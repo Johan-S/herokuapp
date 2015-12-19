@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<h1>
+  Source Files
+</h1>
+Here you can explore the code running this site!
+<div>
+</div>
+
+<section style="text-align: left; white-space: nowrap; ">
+  <ul class="file-list" style="margin-left: 1em;">
+    <li ng-repeat="file in fileList" ng-click="getSource(file)">
+      {{file}}
+    </li>
+  </ul>
+  <sourcecode text="sourcetext" ng-show="type==='text'"></sourcecode>
+  <img ng-src="{{imgurl}}" ng-show="type==='img'">
+</section>

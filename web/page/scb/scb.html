@@ -1,0 +1,12 @@
+<div class="standardpage" style="white-space:nowrap;">
+  <div style="display:inline-block;vertical-align:top;" class="lineshade">
+    <div class="clickable" ng-repeat="area in areas | orderBy:'text'" ng-click="setsub(area.id)">
+      {{area.text}} ({{area.id}})
+    </div>
+  </div>
+  <div style="display:inline-block;vertical-align:top;" class="lineshade">
+    <div class="clickable" ng-repeat="area in subareas | orderBy:'text'">
+      {{area.text}} ({{area.id}})
+    </div>
+  </div>
+</div>
