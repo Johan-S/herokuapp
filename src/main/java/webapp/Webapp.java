@@ -48,21 +48,6 @@ public class Webapp {
     
   }
   
-  public static void initDB() throws Exception {
-    System.out.println("Parsing db url: " + System.getenv("DATABASE_URL"));
-    URI dbUri = new URI(System.getenv("DATABASE_URL"));
-    String[] usr = dbUri.getUserInfo().split(":");
-    String username = usr[0];
-    String password = "";
-    if (usr.length > 1)
-      password = usr[1];
-    System.out.printf("Name: %s, Password: %s\n", username, password);
-    String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
-    ConnectionPool.setUrl(dbUrl);
-    ConnectionPool.setUsername(username);
-    ConnectionPool.setPassword(password);
-  }
-
   public static void runServers() throws IOException {
     int port = Integer.valueOf(System.getenv("PORT"));
     Server s = Server.create(port);
@@ -71,7 +56,7 @@ public class Webapp {
   }
   
   public static void main(String[] args) throws Exception {
-    initDB();
+    Database.init();
     initLog();
     runServers();
   }
