@@ -13,7 +13,7 @@ import util.Strings;
 
 
 public class Sources {
-  static final String JAVA_SOURCE = "src/";
+  static final String JAVA_SOURCE = "src/main/java/";
   static List<String> getFileList(String path, File folder, List<String> part) {
     File[] listOfFiles = folder.listFiles();
     for (File f : listOfFiles) {
