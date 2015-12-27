@@ -1,0 +1,137 @@
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.imageselector .display {
+  display: initial !important;
+}
+
+.nodrag {
+  user-drag: none; 
+-moz-user-select: none;
+-webkit-user-drag: none;
+}
+
+.dragged {
+  
+  cursor: -webkit-grab;
+}
+.imageselector * {
+  user-drag: none; 
+-moz-user-select: none;
+-webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+.imageselector {
+  user-drag: none; 
+-moz-user-select: none;
+-webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+.imageselector .createcursor {
+  cursor: crosshair;
+}
+.imageselector .movecursor {
+  cursor: -webkit-grabbing;
+}
+.imageselector .resize-n-cursor {
+  cursor: ns-resize;
+}
+.imageselector .resize-ne-cursor {
+  cursor: nesw-resize;
+}
+.imageselector .resize-e-cursor {
+  cursor: ew-resize;
+}
+.imageselector .resize-se-cursor {
+  cursor: nwse-resize;
+}
+.imageselector .resize-s-cursor {
+  cursor: ns-resize;
+}
+.imageselector .resize-sw-cursor {
+  cursor: nesw-resize;
+}
+.imageselector .resize-w-cursor {
+  cursor: ew-resize;
+}
+.imageselector .resize-nw-cursor {
+  cursor: nwse-resize;
+}
+
+.imageselector img {
+  vertical-align: bottom;
+}
+.imageselector .selected {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.imageselector .selectionbox {
+  border: solid 10000px rgba(0,0,0,0.5);
+  position: absolute;
+  box-sizing: content-box;
+}
+.imageselector .grabbox {
+  cursor: -webkit-grab;
+  position: absolute;
+  z-index: 20;
+}
+.imageselector .cover {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1001;
+}
+.imageselector .resize{
+  position: absolute;
+  z-index: 21
+}
+.imageselector .resize.n {
+  cursor: ns-resize
+}
+.imageselector .resize.s {
+  cursor: ns-resize
+}
+.imageselector .resize.e {
+  cursor: ew-resize
+}
+.imageselector .resize.w {
+  cursor: ew-resize
+}
+.imageselector .resize.se {
+  cursor: nwse-resize
+}
+.imageselector .resize.sw {
+  cursor: nesw-resize
+}
+.imageselector .resize.ne {
+  cursor: nesw-resize
+}
+.imageselector .resize.nw {
+  cursor: nwse-resize
+}
+.imageselector > * {
+  display: inline-block;
+}
