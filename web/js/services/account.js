@@ -16,7 +16,7 @@
 
 
 
-app.factory("account", function($cookies, $http) {
+app.factory("account", function($cookies, $http, $location) {
   var data = {id: 0, name: ""};
   $http.get('/me').then(function(response) {
     if (response.data.id)
@@ -25,14 +25,20 @@ app.factory("account", function($cookies, $http) {
   return {
     login: function(name, pass) {
       $http.post('/login', {name: name, password: pass}).then(function(response) {
-        data.id = response.data.id;
-        data.name = response.data.name;
+        if (response.data.id) {
+          data.id = response.data.id;
+          data.name = response.data.name;
+          $location.url("/");
+        }
       });
     },
     register: function(name, pass) {
       $http.post('/register', {name: name, password: pass}).then(function(response) {
-        data.id = response.data.id;
-        data.name = response.data.name;
+        if (response.data.id) {
+          data.id = response.data.id;
+          data.name = response.data.name;
+          $location.url("/");
+        }
       });
     },
     logout: function() {
